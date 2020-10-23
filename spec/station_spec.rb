@@ -1,7 +1,7 @@
 require 'station'
 
 describe Station do
-  let(:subject) {double name: "KC", zone: 2}
+  subject {described_class.new(name: "KC", zone: 2)}
   it 'station has a name variable' do
     expect(subject.name).to eq "KC"
   end
